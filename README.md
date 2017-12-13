@@ -1,7 +1,7 @@
 # [Sketch Simplification](http://hi.cs.waseda.ac.jp/~esimo/research/sketch/)
 
 ![Example result](/example_fig01_eisaku.png?raw=true "Example result of the provided model.")
-Example result of a sketch simplification. Image copyrighted by Eisaku Kubonouchi and only non-commercial research usage is allowed.
+Example result of a sketch simplification. Image copyrighted by Eisaku Kubonouchi ([@EISAKUSAKU](https://twitter.com/eisakusaku)) and only non-commercial research usage is allowed.
 
 ## Overview
 
@@ -21,7 +21,7 @@ and
    ACM Transactions on Graphics (TOG), 2017
 ```
 
-See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch/) for more detailed information.
+See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/) for more detailed information.
 
 ## License
 
@@ -84,8 +84,8 @@ For replicability we include code to replicate the figures in the paper. After d
 
 This will convert the input images in `figs/` and save the output in `out/`. We note that there are small differences with the results in the paper due to hardware differences and small differences in the torch/pytorch implementations. Furthermore, results are shown without the post-processing mentioned in the notes at the bottom of this document.
 
-Please note that we do not have the copyright for all these images and in general only non-commercial research usage is permitted. In particular, `fig16_eisaku.png`, `fig06_eisaku_robo.png`, `fig06_eisaku_joshi.png`, and `fig01_eisaku.png` are copyright by Eisaku Kubonoichi (@EISAKUSAKU) and only non-commercial research usage is allowed.
-The images`fig14_pepper.png` and `fig06_pepper.png` are licensed by David Revoy www.davidrevoy.com under CC-by 4.0.
+Please note that we do not have the copyright for all these images and in general only non-commercial research usage is permitted. In particular, `fig16_eisaku.png`, `fig06_eisaku_robo.png`, `fig06_eisaku_joshi.png`, and `fig01_eisaku.png` are copyright by Eisaku Kubonoichi ([@EISAKUSAKU](https://twitter.com/eisakusaku)) and only non-commercial research usage is allowed.
+The images`fig14_pepper.png` and `fig06_pepper.png` are licensed by David Revoy ([www.davidrevoy.com](http://www.davidrevoy.com/)) under CC-by 4.0.
 
 ## Notes
 
@@ -122,6 +122,6 @@ and
 
 ## Acknowledgements
 
-This work was partially supported by JST CREST Grant Number JPMJCR14D1 and JST ACT-I Grant Number JPMJPR16UD and JPMJPR16U3.
+This work was partially supported by JST CREST Grant Number JPMJCR14D1 and JST ACT-I Grant Numbers JPMJPR16UD and JPMJPR16U3.
 
 
