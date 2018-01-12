@@ -18,7 +18,7 @@ and
 ```
    "Mastering Sketching: Adversarial Augmentation for Structured Prediction"
    Edgar Simo-Serra*, Satoshi Iizuka*, Hiroshi Ishikawa (* equal contribution)
-   ACM Transactions on Graphics (TOG), 2017
+   ACM Transactions on Graphics (TOG), 2018
 ```
 
 See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/) for more detailed information.
@@ -26,7 +26,7 @@ See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/)
 ## License
 
 ```
-  Copyright (C) <2017> <Edgar Simo-Serra and Satoshi Iizuka>
+  Copyright (C) <2017-2018> <Edgar Simo-Serra and Satoshi Iizuka>
 
   This work is licensed under the Creative Commons
   Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy
@@ -72,7 +72,7 @@ python simplify.py --help
 ## Models
 
 - `model_mse.t7`: Model trained using only MSE loss (SIGGRAPH 2016 model).
-- `model_gan.t7`: Model trained with MSE and GAN loss using both supervised and unsupervised training data (TOG 2017 model).
+- `model_gan.t7`: Model trained with MSE and GAN loss using both supervised and unsupervised training data (TOG 2018 model).
 
 ## Reproducing Paper Figures
 
@@ -112,11 +112,13 @@ If you use these models please cite:
 and
 
 ```
-@Article{SimoSerraTOG2017,
+@Article{SimoSerraTOG2018,
    author    = {Edgar Simo-Serra and Satoshi Iizuka and Hiroshi Ishikawa},
    title     = {{Mastering Sketching: Adversarial Augmentation for Structured Prediction}},
    journal   = "ACM Transactions on Graphics (TOG)",
-   year      = 2017,
+   year      = 2018,
+   volume    = 37,
+   number    = 1,
 }
 ```
 
