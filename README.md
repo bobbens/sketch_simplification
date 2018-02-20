@@ -76,13 +76,21 @@ python simplify.py --help
 
 ## Reproducing Paper Figures
 
-For replicability we include code to replicate the figures in the paper. After downloading the models you can run it with:
+For replicability we include code to replicate the figures in the paper. After downloading the models you can run it to generate all the figures with:
 
 ```
 ./figs.sh
 ```
 
-This will convert the input images in `figs/` and save the output in `out/`. We note that there are small differences with the results in the paper due to hardware differences and small differences in the torch/pytorch implementations. Furthermore, results are shown without the post-processing mentioned in the notes at the bottom of this document.
+or to generate inidividual figures with:
+
+```
+./figX.sh
+```
+
+where X is one of 1, 6, 7, 12, 14, 15, or 16.
+
+These scripts will convert the input images in `figs/` and save the output in `out/`. We note that there are small differences with the results in the paper due to hardware differences and small differences in the torch/pytorch implementations. Furthermore, results are shown without the post-processing mentioned in the notes at the bottom of this document.
 
 Please note that we do not have the copyright for all these images and in general only non-commercial research usage is permitted. In particular, `fig16_eisaku.png`, `fig06_eisaku_robo.png`, `fig06_eisaku_joshi.png`, and `fig01_eisaku.png` are copyright by Eisaku Kubonoichi ([@EISAKUSAKU](https://twitter.com/eisakusaku)) and only non-commercial research usage is allowed.
 The images`fig14_pepper.png` and `fig06_pepper.png` are licensed by David Revoy ([www.davidrevoy.com](http://www.davidrevoy.com/)) under CC-by 4.0.
