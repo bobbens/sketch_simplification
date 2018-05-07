@@ -77,6 +77,8 @@ Using the same interface it is possible to perform pencil drawing generation. In
 python simplify.py --img test_line.png --out out_rough.png --model model_pencil2.t7
 ```
 
+This will generate a rough version of `test_line.png` as `out_rough.png`. By changing the model it is possible to change the type of rough sketch being generated.
+
 ## Models
 
 - `model_mse.t7`: Model trained using only MSE loss (SIGGRAPH 2016 model).
