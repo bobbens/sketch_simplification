@@ -99,6 +99,10 @@ This will convert the input images in `figs/` and save the output in `out/`. We 
 Please note that we do not have the copyright for all these images and in general only non-commercial research usage is permitted. In particular, `fig16_eisaku.png`, `fig06_eisaku_robo.png`, `fig06_eisaku_joshi.png`, and `fig01_eisaku.png` are copyright by Eisaku Kubonoichi ([@EISAKUSAKU](https://twitter.com/eisakusaku)) and only non-commercial research usage is allowed.
 The images`fig14_pepper.png` and `fig06_pepper.png` are licensed by David Revoy ([www.davidrevoy.com](http://www.davidrevoy.com/)) under CC-by 4.0.
 
+## Training
+
+Please see the [training readme](train/TRAIN.md).
+
 ## Notes
 
 - Models are in Torch7 format and loaded using the PyTorch legacy code.
