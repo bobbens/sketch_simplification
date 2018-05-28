@@ -3,28 +3,26 @@ require 'lfs'
 require 'image'
 require 'optim'
 require 'randomkit'
-require 'cunn'
-require 'cudnn'
 
 cmd = torch.CmdLine()
 cmd:addTime()
 cmd:text()
-cmd:option( '--batchsize',    8,             'バッチの数。' )
-cmd:option( '--batchgroups',  1,             'バッチの組の数。同時に使う' )
-cmd:option( '--patchnum',     1,             '画像から切り抜かれたパッチの数。' )
-cmd:option( '--patchsize',    424,           '画像から切り抜かれたパッチの大きさ。' )
-cmd:option( '--load',         'none',        'モデルの学習を続ける。' )
-cmd:option( '--saveinterval', 2500,          '保存する間隔。' )
-cmd:option( '--mse',          false,         'MSEロスを使う。' )
+cmd:option( '--batchsize',    8,             'Number of patches to use in each batch.' )
+cmd:option( '--batchgroups',  1,             'Batches to accumulate before updating the weights.')
+cmd:option( '--patchnum',     1,             'Number of patches to extract from each image.' )
+cmd:option( '--patchsize',    424,           'Size of the patches to use (in pixels).' )
+cmd:option( '--load',         'none',        'Name of the file to load and continue training. \'none\' defaults to training from scratch.' )
+cmd:option( '--saveinterval', 2500,          'Number of iterations between each save.' )
 cmd:option( '--trainfiles',   'train.csv',   'Training file.' )
-cmd:option( '--dataaug',      true,         'データを想像する。' )
-cmd:option( '--scaledata',    '1.5,1.75,2,2.25,2.5,2.75,3,3.25,3.5',     'デートセットを小さくする。' )
-cmd:option( '--kaiten',       180,            'どれほどまで回転する。' )
+cmd:option( '--scaledata',    '1.5,1.75,2,2.25,2.5,2.75,3,3.25,3.5',     'Different scales to use when training (comma-separated list).' )
+cmd:option( '--kaiten',       180,            'Degrees to randomly rotate when training.' )
 opt = cmd:parse(arg or {})
 print(opt)
 
-local use_weight = true
+require 'cunn'
+require 'cudnn'
 
+local use_weight = true
 
 local function conv1( model, fin, fout ) 
    return model:add( nn.SpatialConvolution( fin, fout, 3, 3, 1, 1, 1, 1 ) )
