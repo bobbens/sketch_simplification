@@ -6,7 +6,7 @@ function download_model {
    FILEURL="$3"
    FILEMD5="$4"
    echo "Downloading the sketch simplification $MODELNAME model..."
-   wget --continue -O "$FILENAME" -- "$FILEURL"
+   wget -q --show-progress --continue -O "$FILENAME" -- "$FILEURL"
 
    echo -n "Checking integrity (md5sum)..."
    OS=`uname -s`
@@ -27,6 +27,7 @@ function download_model {
 
 download_model "MSE" "model_mse.t7" "http://hi.cs.waseda.ac.jp/~esimo/data/sketch_mse.t7" "12317df9a0a2a7220629f5f361b45b82"
 download_model "GAN" "model_gan.t7" "http://hi.cs.waseda.ac.jp/~esimo/data/sketch_gan.t7" "3a5b4088f2490ca4b8140a374e80c878"
+download_model "PENCIL(1)" "model_pencil1.t7" "http://hi.cs.waseda.ac.jp/~esimo/data/pencil_artist1.t7" "33d553ff3a50d6522e79a73002b0025c"
+download_model "PENCIL(2)" "model_pencil2.t7" "http://hi.cs.waseda.ac.jp/~esimo/data/pencil_artist2.t7" "537b3ad9d46b2a82b65883be747a7ba9"
 echo "Downloads finished successfully!"
-
 
