@@ -81,8 +81,8 @@ Once a dataset is obtained, a csv file containing all the pairs has to be
 created. The format is the following:
 
 ```
-  /path/to/rough_sketch1.png,/path/to/line_drawing1.png
-  /path/to/rough_sketch2.png,/path/to/line_drawing2.png
+/path/to/rough_sketch1.png,/path/to/line_drawing1.png
+/path/to/rough_sketch2.png,/path/to/line_drawing2.png
   ...
 ```
 
@@ -90,7 +90,7 @@ Once the dataset csv file is saved as `train.csv`, Weighted MSE training can
 then be started by running the following command:
 
 ```
-  th train.lua
+th train.lua
 ```
 
 On the first run, it will create a lot of temporary weight files in `wcache/`.
@@ -102,12 +102,39 @@ For more options, see `th train.lua --help`.
 
 ## Adversarial Augmentation Training
 
-TODO.
+For the adversarial augmentation training, two additional datasets should be
+prepared: one containing only line drawings, and one containing only rough
+sketches. Like the paired dataset, a csv file for each of the new datasets
+should be created, with one image per line, such as the following:
+
+```
+/path/to/image1.png
+/path/to/image2.png
+...
+```
+
+The line dataset csv file should be saved as `train_line.csv` and the rough
+sketch dataset csv file should be saved as `train_rough.csv`.
+
+The adversarial augmentation training is done in two stages: first the
+discriminator is trained using a pretrained simplification model. Afterwards
+both the simplification and discriminator model are trained jointly. This is
+done automatically with the `--pretraindnet` parameter that defaults to 1000.
+
+```
+th train_adv.lua
+```
+
+For more options, see `th train_adv.lua --help`.
+
+Checkpoints will be saved to the `cache_adv/` directory. The script will run
+until killed.
 
 ## Notes
 
-- Models are in Torch7 format and loaded using the PyTorch legacy code.
 - This was developed and tested on various machines from late 2015 to end of 2016.
+- Due to the stochastic nature of adversarial training, results will change between runs.
+- The adversarial training approach will eventually collapse if left training too long.
 
 ## Citing
 
