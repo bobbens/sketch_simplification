@@ -20,29 +20,6 @@ and
 
 See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/) for more detailed information.
 
-## License
-
-```
-  Copyright (C) <2017-2018> <Edgar Simo-Serra and Satoshi Iizuka>
-
-  This program is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation, either version 3 of the License, or
-  (at your option) any later version.
-
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-  Edgar Simo-Serra, Waseda University
-  esimo@aoni.waseda.jp, http://hi.cs.waseda.ac.jp/~esimo/  
-  Satoshi Iizuka, Waseda University
-  iizuka@aoni.waseda.jp, http://hi.cs.waseda.ac.jp/~iizuka/
-```
 
 ## Dependencies
 
@@ -168,4 +145,8 @@ and
 
 This work was partially supported by JST CREST Grant Number JPMJCR14D1 and JST ACT-I Grant Numbers JPMJPR16UD and JPMJPR16U3.
 
+## License
 
+This sketch simplification code is  freely available for free non-commercial
+use, and may be redistributed under these conditions. Please, see the [license](/LICENSE)
+for further details.

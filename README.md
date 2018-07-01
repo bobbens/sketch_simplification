@@ -23,22 +23,6 @@ and
 
 See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/) for more detailed information.
 
-## License
-
-```
-  Copyright (C) <2017-2018> <Edgar Simo-Serra and Satoshi Iizuka>
-
-  This work is licensed under the Creative Commons
-  Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy
-  of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or
-  send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-
-  Edgar Simo-Serra, Waseda University
-  esimo@aoni.waseda.jp, http://hi.cs.waseda.ac.jp/~esimo/  
-  Satoshi Iizuka, Waseda University
-  iizuka@aoni.waseda.jp, http://hi.cs.waseda.ac.jp/~iizuka/
-```
-
 ## Dependencies
 
 - [PyTorch](http://pytorch.org/)
@@ -142,4 +126,9 @@ and
 
 This work was partially supported by JST CREST Grant Number JPMJCR14D1 and JST ACT-I Grant Numbers JPMJPR16UD and JPMJPR16U3.
 
+## License
+
+This sketch simplification code is  freely available for free non-commercial
+use, and may be redistributed under these conditions. Please, see the [license](/LICENSE)
+for further details.
 
