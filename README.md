@@ -1,4 +1,4 @@
-# [Sketch Simplification](http://hi.cs.waseda.ac.jp/~esimo/research/sketch/)
+# [Sketch Simplification](https://esslab.jp/~ess/research/sketch/)
 
 ![Example result](/example_fig01_eisaku.png?raw=true "Example result of the provided model.")
 Example result of a sketch simplification. Image copyrighted by Eisaku Kubonouchi ([@EISAKUSAKU](https://twitter.com/eisakusaku)) and only non-commercial research usage is allowed.
@@ -21,7 +21,7 @@ and
    ACM Transactions on Graphics (TOG), 2018
 ```
 
-See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/) for more detailed information.
+See our [project page](https://esslab.jp/~ess/research/sketch_master/) for more detailed information.
 
 ## Dependencies
 

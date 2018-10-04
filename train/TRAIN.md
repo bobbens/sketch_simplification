@@ -1,4 +1,4 @@
-# [Sketch Simplification](http://hi.cs.waseda.ac.jp/~esimo/research/sketch/)
+# [Sketch Simplification](https://esslab.jp/~ess/research/sketch/)
 
 ## Overview
 
@@ -18,7 +18,7 @@ and
    ACM Transactions on Graphics (TOG), 2018
 ```
 
-See our [project page](http://hi.cs.waseda.ac.jp/~esimo/research/sketch_master/) for more detailed information.
+See our [project page](https://esslab.jp/~ess/research/sketch_master/) for more detailed information.
 
 
 ## Dependencies
