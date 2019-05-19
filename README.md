@@ -5,7 +5,7 @@ Example result of a sketch simplification. Image copyrighted by Eisaku Kubonouch
 
 ## Overview
 
-This code provides an pre-trained models used in the research papers:
+This code provides pre-trained models used in the research papers:
 
 ```
    "Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup"
