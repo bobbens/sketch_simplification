@@ -25,7 +25,7 @@ See our [project page](https://esslab.jp/~ess/research/sketch_master/) for more 
 
 ## Dependencies
 
-- [PyTorch](http://pytorch.org/)
+- [PyTorch](http://pytorch.org/) (version 0.4.1)
   [torchvision](http://pytorch.org/docs/master/torchvision/)
 - [pillow](http://pillow.readthedocs.io/en/latest/index.html)
 
