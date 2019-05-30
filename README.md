@@ -132,3 +132,43 @@ This sketch simplification code is  freely available for free non-commercial
 use, and may be redistributed under these conditions. Please, see the [license](/LICENSE)
 for further details.
 
+## Deploy with Docker
+
+### Dependencies
+- [Docker](https://www.docker.com/)
+
+### Build Local Image
+
+The models will automatically be downloaded into the container, which may take a few minutes.
+
+```
+git clone https://github.com/bitstrider/sketch_simplification.git
+cd sketch_simplification
+docker build -t bitstrider/sketch_simplification .
+```
+
+### Run with Interactive Shell
+
+```
+docker run -i -v bitstrider/sketch_simplification
+```
+
+Once inside the interactive shell, start using the library as usual.
+
+```
+./figs.sh
+python simplify.py --img test_line.png --out out_rough.png --model model_pencil2.t7
+```
+
+
+### Run with Mounted Volume bound to a Host Directory
+
+You'll probably have images on your host that you what to convert. To do this you'll need to configure a way to shared data between your host and the container. 
+
+The example below binds `~/my_sketches` from the host to `~/sketch_simplification/shared` in the container, providing access between the two environments.
+
+```
+docker run -i -v ~/my_sketches:~/sketch_simplification/shared bitstrider/sketch_simplification
+```
+
+For more info, see [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-share-data-between-the-docker-container-and-the-host) or [official docs](https://docs.docker.com/storage/bind-mounts/)
