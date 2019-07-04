@@ -1,0 +1,5 @@
+.idea
+**/*.pth
+legacy
+.DS_Store
+__pycache__/
